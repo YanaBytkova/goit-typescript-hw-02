@@ -20,4 +20,5 @@ const page2 = {
   status: 'close',
 }
 
+let arrPage = [page1, page2];
 export {};
