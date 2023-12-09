@@ -4,14 +4,16 @@
 */
 
 function getPromise () {
-  return new Promise((resolve) => {
+  let promise: Promise<(string | number)[]>;
+  
+  promise = new Promise((resolve) => {
     resolve(['Text', 50]);
   });
+  return promise;
 }
-
+type getpromise = ReturnType<typeof getPromise>;
 getPromise()
 .then((data) => {
   console.log(data);
 });
 
-export {};
