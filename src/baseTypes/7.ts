@@ -12,7 +12,7 @@ enum DayOfWeek {
   SUNDAY = 'restday'
  }
  function isWeekend(day: DayOfWeek): boolean {
-   return 'workday' === day;
+   return 'restday' === day;
   }
  
   ;

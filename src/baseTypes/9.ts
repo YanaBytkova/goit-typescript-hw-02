@@ -20,5 +20,13 @@ const page2 = {
   status: 'close',
 }
 
-let arrPage = [page1, page2];
+type Details = {createAt:string, updateAt:string};
+type universalPage = {
+  title: string,
+  likes: number,
+  accounts: string[],
+  status: string,
+  details?: Details
+}
+
 export {};
